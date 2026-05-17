@@ -75,25 +75,25 @@ a { text-decoration: none; }
 }
 .logo-text .sense {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.05rem;
   font-weight: 300;
   color: var(--teal);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: lowercase;
 }
 .logo-text .insight {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--gold);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: lowercase;
 }
 
 /* Large logo variant (contact section) */
 .logo--large .logo-icon { width: 80px; height: 104px; }
-.logo--large .sense  { font-size: 2.4rem; }
-.logo--large .insight { font-size: 2.7rem; }
+.logo--large .sense  { font-size: 1.7rem; }
+.logo--large .insight { font-size: 1.9rem; }
 
 /* Navigation */
 .main-nav ul {
@@ -196,12 +196,13 @@ a { text-decoration: none; }
   padding: 0 60px 70px 20px;
 }
 .hero-content h1 {
-  font-size: 4.2rem;
-  font-weight: 700;
-  letter-spacing: 5px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--white);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+  line-height: 1.5;
 }
 .hero-content p {
   font-size: 1.05rem;
@@ -210,6 +211,15 @@ a { text-decoration: none; }
   letter-spacing: 1px;
   margin-bottom: 32px;
   line-height: 1.6;
+}
+.hero-cursive {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0 !important;
+  color: var(--white);
+  margin-bottom: 28px !important;
+  line-height: 1.15;
 }
 
 /* ================================================================
