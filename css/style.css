@@ -173,7 +173,7 @@ a { text-decoration: none; }
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .hero-bg {
   position: absolute;
@@ -195,9 +195,11 @@ a { text-decoration: none; }
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 0 40px 80px;
-  max-width: 720px;
+  text-align: right;
+  padding: 0 60px 80px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: 0;
 }
 .hero-content h1 {
   font-size: 3.6rem;
@@ -676,7 +678,7 @@ a { text-decoration: none; }
 @media (max-width: 540px) {
   .container { padding: 0 20px; }
   .header-inner { padding: 0 20px; }
-  .hero-content { padding: 0 20px 60px; max-width: 100%; }
+  .hero-content { padding: 0 20px 60px; max-width: 100%; text-align: center; margin: 0; }
   .hero-content h1 { font-size: 2.2rem; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .form-row { grid-template-columns: 1fr; }
