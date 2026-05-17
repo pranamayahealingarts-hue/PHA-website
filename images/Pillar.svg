@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="300" height="220">
+
+  <!-- Filled lens only — the overlap zone, bold -->
+  <path d="M 150,24 A 94,94 0 0,1 150,196 A 94,94 0 0,1 150,24 Z" fill="#c2a856"/>
+
+  <!-- Left ghost arc — dashed, suggesting the left circle extending beyond -->
+  <path d="M 150,24 A 94,94 0 0,0 150,196" fill="none" stroke="#c2a856" stroke-width="1" stroke-dasharray="4 4" opacity="0.45"/>
+
+  <!-- Right ghost arc — dashed, suggesting the right circle extending beyond -->
+  <path d="M 150,24 A 94,94 0 0,1 150,196" fill="none" stroke="#c2a856" stroke-width="1" stroke-dasharray="4 4" opacity="0.45" transform="rotate(180,150,110)"/>
+
+</svg>
