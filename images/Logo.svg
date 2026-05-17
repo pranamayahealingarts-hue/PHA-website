@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" width="300" height="220">
+
+  <!-- Left circle — body -->
+  <circle cx="118" cy="110" r="80" fill="none" stroke="#c2a856" stroke-width="1.8"/>
+
+  <!-- Right circle — mind -->
+  <circle cx="182" cy="110" r="80" fill="none" stroke="#c2a856" stroke-width="1.8"/>
+
+  <!-- Filled overlap lens -->
+  <path d="M 150,36.9 A 80,80 0 0,1 150,183.1 A 80,80 0 0,1 150,36.9 Z" fill="#c2a856"/>
+
+</svg>
