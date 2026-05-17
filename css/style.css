@@ -67,7 +67,7 @@ a { text-decoration: none; }
   gap: 14px;
   color: inherit;
 }
-.logo-icon { width: 52px; height: 68px; flex-shrink: 0; }
+.logo-icon { height: 46px; width: auto; flex-shrink: 0; }
 .logo-text {
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@ a { text-decoration: none; }
 }
 
 /* Large logo variant (contact section) */
-.logo--large .logo-icon { width: 80px; height: 104px; }
+.logo--large .logo-icon { height: 72px; width: auto; }
 .logo--large .sense  { font-size: 1.7rem; }
 .logo--large .insight { font-size: 1.9rem; }
 
