@@ -430,9 +430,10 @@ a { text-decoration: none; }
    QUOTE SECTION
    ================================================================ */
 .quote-section {
-  display: grid;
-  grid-template-columns: 55% 45%;
-  background: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #cdddd8 0%, #b5cec8 40%, #93b8b0 100%);
   min-height: 300px;
   overflow: hidden;
 }
@@ -451,7 +452,9 @@ a { text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 60px 70px 30px;
+  padding: 70px 60px;
+  max-width: 820px;
+  text-align: center;
 }
 .quote-text-wrap blockquote {
   font-size: 0.95rem;
