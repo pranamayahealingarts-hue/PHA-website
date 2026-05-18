@@ -467,6 +467,44 @@ a { text-decoration: none; }
 }
 
 /* ================================================================
+   REVIEW SECTION
+   ================================================================ */
+.review-section {
+  background: var(--sage-light, #eef4f2);
+  padding: 70px 0;
+}
+.review-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 40px;
+}
+.review-quote {
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+.review-quote::before { content: '\201C'; }
+.review-quote::after  { content: '\201D'; }
+.review-author {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.9rem;
+  color: var(--teal);
+  line-height: 1.2;
+}
+.review-context {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 6px;
+}
+
+/* ================================================================
    ABOUT SECTION
    ================================================================ */
 .about-section { padding: 110px 0; background: var(--white); }
