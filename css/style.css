@@ -433,7 +433,7 @@ a { text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #cdddd8 0%, #b5cec8 40%, #93b8b0 100%);
+  background: linear-gradient(135deg, #ddeee9 0%, #a8c8c0 45%, #6fa89e 100%);
   min-height: 300px;
   overflow: hidden;
 }
