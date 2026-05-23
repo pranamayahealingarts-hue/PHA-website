@@ -207,8 +207,8 @@ a { text-decoration: none; }
   letter-spacing: 2px;
   text-transform: none;
   color: var(--white);
-  margin-bottom: 0;
-  line-height: 1.25;
+  margin-bottom: 36px;
+  line-height: 1.1;
   text-shadow: 0 2px 20px rgba(0,0,0,0.35);
 }
 .hero-content p {
