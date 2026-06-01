@@ -340,6 +340,13 @@ a { text-decoration: none; }
   color: var(--teal);
   line-height: 1.7;
 }
+.service-sublabel {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--text);
+  margin-top: 4px;
+}
 
 /* ================================================================
    INFO BANNER
