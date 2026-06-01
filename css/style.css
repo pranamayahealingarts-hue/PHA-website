@@ -583,12 +583,12 @@ a { text-decoration: none; }
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--teal);
+  color: #ffffff;
   outline: none;
   transition: border-color 0.2s, background 0.2s;
 }
 .form-input::placeholder,
-.form-textarea::placeholder { color: var(--teal); opacity: 0.85; }
+.form-textarea::placeholder { color: #ffffff; opacity: 0.85; }
 .form-input:focus,
 .form-textarea:focus {
   border-color: var(--teal);
