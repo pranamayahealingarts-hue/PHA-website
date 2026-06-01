@@ -277,6 +277,7 @@ a { text-decoration: none; }
   border: none;
 }
 .btn-hero {
+  margin-top: 20px;
   padding: 13px 30px;
   border: 2px solid rgba(255,255,255,0.85);
   background: rgba(107,168,160,0.55);
