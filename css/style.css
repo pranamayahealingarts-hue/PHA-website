@@ -573,6 +573,21 @@ a { text-decoration: none; }
   color: var(--text);
   line-height: 1.2;
 }
+.contact-brand-main {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+}
+.contact-brand-sub {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.85;
+}
 
 .contact-heading {
   font-size: 1.4rem;
