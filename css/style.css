@@ -220,7 +220,7 @@ a { text-decoration: none; }
   line-height: 1.6;
 }
 .hero-cursive {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: 4.4rem;
   font-weight: 400;
   letter-spacing: 0 !important;
@@ -490,7 +490,7 @@ a { text-decoration: none; }
 .review-quote::before { content: '\201C'; }
 .review-quote::after  { content: '\201D'; }
 .review-author {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: 1.9rem;
   color: var(--teal);
   line-height: 1.2;
@@ -509,7 +509,7 @@ a { text-decoration: none; }
    ================================================================ */
 .about-section { padding: 110px 0; background: var(--white); }
 .name-script {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: 3.8rem;
   color: var(--teal);
   font-weight: 400;
@@ -552,7 +552,7 @@ a { text-decoration: none; }
   max-width: 300px;
 }
 .contact-signature {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Alex Brush', cursive;
   font-size: 2.4rem;
   color: var(--text);
   line-height: 1.2;
