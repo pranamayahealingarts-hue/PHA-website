@@ -403,6 +403,13 @@ a { text-decoration: none; }
   color: var(--text);
   margin-bottom: 36px;
 }
+.for-who-cta-note {
+  font-size: 0.82rem !important;
+  font-style: italic;
+  color: var(--teal) !important;
+  margin-bottom: 16px !important;
+  letter-spacing: 0.3px;
+}
 
 /* ================================================================
    TWO-COLUMN CONTENT SECTIONS (Visie / About)
