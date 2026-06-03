@@ -361,7 +361,7 @@ a { text-decoration: none; }
    ================================================================ */
 .info-banner { padding: 80px 60px 80px; }
 .info-banner-inner {
-  background: var(--sage);
+  background: var(--white);
   padding: 60px 80px;
   text-align: center;
   border-radius: 2px;
@@ -396,6 +396,9 @@ a { text-decoration: none; }
   max-width: 740px;
   margin: 0 auto;
   text-align: center;
+  background: var(--sage);
+  padding: 50px 60px;
+  border-radius: 2px;
 }
 .for-who-block p {
   font-size: 0.95rem;
