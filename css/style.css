@@ -359,7 +359,7 @@ a { text-decoration: none; }
 /* ================================================================
    INFO BANNER
    ================================================================ */
-.info-banner { padding: 0 60px 80px; }
+.info-banner { padding: 80px 60px 80px; }
 .info-banner-inner {
   background: var(--sage);
   padding: 60px 80px;
