@@ -518,6 +518,31 @@ a { text-decoration: none; }
 /* ================================================================
    REVIEW SECTION
    ================================================================ */
+.massage-results {
+  padding: 80px 60px;
+  background: var(--sage-light);
+}
+.results-list {
+  list-style: none;
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.results-list li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+  padding-left: 24px;
+  position: relative;
+}
+.results-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+}
 .video-section {
   padding: 80px 0;
   background: var(--white);
