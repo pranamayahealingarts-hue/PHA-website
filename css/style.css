@@ -386,7 +386,7 @@ a { text-decoration: none; }
    ================================================================ */
 .for-who-section {
   padding: 80px 60px;
-  background: var(--white);
+  background: var(--sage);
 }
 .for-who-section .section-heading {
   text-align: center;
@@ -396,9 +396,6 @@ a { text-decoration: none; }
   max-width: 740px;
   margin: 0 auto;
   text-align: center;
-  background: var(--sage);
-  padding: 50px 60px;
-  border-radius: 2px;
 }
 .for-who-block p {
   font-size: 0.95rem;
