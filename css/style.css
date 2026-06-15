@@ -491,7 +491,7 @@ a { text-decoration: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--dark-teal);
+  background: linear-gradient(135deg, #ddeee9 0%, #a8c8c0 45%, #6fa89e 100%);
   min-height: 300px;
   overflow: hidden;
 }
@@ -520,7 +520,7 @@ a { text-decoration: none; }
   letter-spacing: 2.5px;
   text-transform: uppercase;
   text-align: center;
-  color: var(--gold-light);
+  color: var(--heading);
   line-height: 2.1;
 }
 
