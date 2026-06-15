@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Flyer — Pranamaya Healing Arts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .flyer {
+      width: 680px;
+      background: #FAF8F5;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Gold top bar */
+    .flyer-top-bar {
+      height: 8px;
+      background: linear-gradient(90deg, #C4A44A, #d4b85e, #C4A44A);
+    }
+
+    /* Dark header section */
+    .flyer-header {
+      background: #2a4f4a;
+      padding: 52px 60px 44px;
+      position: relative;
+    }
+    .flyer-header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 60px;
+      background: #FAF8F5;
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+
+    .flyer-presented-by {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 3.5px;
+      text-transform: uppercase;
+      color: #C4A44A;
+      margin-bottom: 28px;
+    }
+
+    .flyer-title {
+      font-size: 2.05rem;
+      font-weight: 300;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      max-width: 480px;
+    }
+    .flyer-title em {
+      font-style: italic;
+      font-weight: 300;
+      color: #d4b85e;
+    }
+
+    .flyer-subtitle {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      max-width: 420px;
+    }
+
+    /* Body */
+    .flyer-body {
+      padding: 50px 60px 40px;
+    }
+
+    .flyer-intro {
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: #5a5a5a;
+      margin-bottom: 36px;
+      border-left: 4px solid #C4A44A;
+      padding-left: 20px;
+    }
+
+    .flyer-what {
+      margin-bottom: 36px;
+    }
+    .flyer-what-title {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C4A44A;
+      margin-bottom: 16px;
+    }
+    .flyer-what ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .flyer-what ul li {
+      font-size: 0.88rem;
+      color: #4a4a4a;
+      padding-left: 18px;
+      position: relative;
+      line-height: 1.6;
+    }
+    .flyer-what ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #C4A44A;
+    }
+
+    /* Divider */
+    .flyer-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #C4A44A, transparent);
+      margin: 32px 0;
+    }
+
+    /* Who this is for */
+    .flyer-for {
+      margin-bottom: 36px;
+    }
+    .flyer-for-title {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C4A44A;
+      margin-bottom: 14px;
+    }
+    .flyer-for p {
+      font-size: 0.88rem;
+      color: #5a5a5a;
+      line-height: 1.8;
+    }
+
+    /* Event details box */
+    .flyer-details {
+      background: #2a4f4a;
+      padding: 28px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .flyer-detail-item {}
+    .flyer-detail-label {
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #C4A44A;
+      margin-bottom: 5px;
+    }
+    .flyer-detail-value {
+      font-size: 0.88rem;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* CTA */
+    .flyer-cta {
+      text-align: center;
+    }
+    .flyer-cta p {
+      font-size: 0.82rem;
+      color: #5a5a5a;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    .flyer-cta-btn {
+      display: inline-block;
+      padding: 13px 36px;
+      border: 1.5px solid #2a4f4a;
+      color: #2a4f4a;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-bottom: 8px;
+    }
+    .flyer-cta-url {
+      display: block;
+      font-size: 0.7rem;
+      color: #C4A44A;
+      letter-spacing: 1.5px;
+      margin-top: 10px;
+    }
+
+    /* Footer / bio */
+    .flyer-footer {
+      background: #2a4f4a;
+      padding: 28px 60px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 8px;
+    }
+    .flyer-photo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      flex-shrink: 0;
+      border: 2px solid #C4A44A;
+    }
+    .flyer-bio {}
+    .flyer-bio-name {
+      font-family: 'Alex Brush', cursive;
+      font-size: 1.7rem;
+      color: #d4b85e;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .flyer-bio-text {
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.65;
+    }
+
+    /* Gold bottom bar */
+    .flyer-bottom-bar {
+      height: 8px;
+      background: linear-gradient(90deg, #C4A44A, #d4b85e, #C4A44A);
+    }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .flyer { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+
+    <div class="flyer-top-bar"></div>
+
+    <div class="flyer-header">
+      <div class="flyer-presented-by">Pranamaya Healing Arts · Free Event</div>
+      <h1 class="flyer-title">Why your body is still holding it — <em>when therapy, medicine, and willpower haven't been enough</em></h1>
+      <p class="flyer-subtitle">A 45-minute talk on the science of how the body stores what the mind couldn't process — and what becomes possible when we finally listen.</p>
+    </div>
+
+    <div class="flyer-body">
+
+      <p class="flyer-intro">If you've been told your results are normal but you still don't feel well — or if you've done the therapy, taken the medication, followed the advice, and something is still unresolved — this evening is for you.</p>
+
+      <div class="flyer-what">
+        <div class="flyer-what-title">What we'll cover</div>
+        <ul>
+          <li>The science behind why emotional health directly affects physical symptoms</li>
+          <li>Why talk therapy has a ceiling — and what lies beneath it</li>
+          <li>What it looks like when the body finally completes what it's been holding</li>
+          <li>A live somatic demonstration — watch the process in real time</li>
+        </ul>
+      </div>
+
+      <div class="flyer-divider"></div>
+
+      <div class="flyer-for">
+        <div class="flyer-for-title">This evening is for you if</div>
+        <p>You have a chronic physical symptom or emotional pattern that conventional approaches haven't resolved. You've seen the specialists. You've done the therapy. You're not a sceptic — you believe the answer exists somewhere. You just haven't found the right door in.</p>
+      </div>
+
+      <div class="flyer-details">
+        <div class="flyer-detail-item">
+          <div class="flyer-detail-label">Date</div>
+          <div class="flyer-detail-value">Tuesday, July 15, 2025</div>
+        </div>
+        <div class="flyer-detail-item">
+          <div class="flyer-detail-label">Time</div>
+          <div class="flyer-detail-value">7:00 – 7:45 pm</div>
+        </div>
+        <div class="flyer-detail-item">
+          <div class="flyer-detail-label">Location</div>
+          <div class="flyer-detail-value">Riverside Yoga Studio<br>Burlington, Vermont</div>
+        </div>
+        <div class="flyer-detail-item">
+          <div class="flyer-detail-label">Admission</div>
+          <div class="flyer-detail-value">Free · Space is limited<br>Registration required</div>
+        </div>
+      </div>
+
+      <div class="flyer-cta">
+        <p>Reserve your spot — space is intentionally kept small so there's room for real conversation.</p>
+        <a class="flyer-cta-btn" href="https://pranamayahealingarts.com/contact.html">Register at pranamayahealingarts.com</a>
+        <span class="flyer-cta-url">or email pranamayahealingarts@gmail.com</span>
+      </div>
+
+    </div>
+
+    <div class="flyer-footer">
+      <img src="images/Alexandra.jpg" alt="Alexandra" class="flyer-photo">
+      <div class="flyer-bio">
+        <div class="flyer-bio-name">Alexandra</div>
+        <div class="flyer-bio-text">Thai massage practitioner & somatic coach with a background in neuroscience and psychology. Based in Pemberton, BC and Playa Maderas, Nicaragua — working with clients across North America.</div>
+      </div>
+    </div>
+
+    <div class="flyer-bottom-bar"></div>
+
+  </div>
+</body>
+</html>
