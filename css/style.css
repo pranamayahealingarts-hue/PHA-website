@@ -119,6 +119,7 @@ a { text-decoration: none; }
   gap: 4px;
 }
 .main-nav a:hover { opacity: 0.6; }
+.main-nav a.active { opacity: 0.6; border-bottom: 2px solid currentColor; padding-bottom: 2px; }
 .main-nav .arrow { font-size: 0.6rem; }
 
 /* Dropdowns */

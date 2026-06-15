@@ -43,13 +43,20 @@ if (header) {
   });
 }
 
+/* ── Active nav link ── */
+const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.main-nav a').forEach(link => {
+  const linkPath = link.getAttribute('href').split('/').pop();
+  if (linkPath === currentPath) link.classList.add('active');
+});
+
 /* ── Basic contact form prevent default (replace with real handler) ── */
 const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     const btn = form.querySelector('.btn-submit');
-    btn.textContent = 'Verzonden ✓';
+    btn.textContent = 'Sent ✓';
     btn.style.background = '#4d8f87';
     btn.disabled = true;
   });
