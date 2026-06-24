@@ -813,11 +813,21 @@ a { text-decoration: none; }
   text-align: center;
 }
 .page-hero-content h1 {
-  font-size: 2.6rem;
+  font-family: 'Alex Brush', cursive;
+  font-size: 4rem;
   font-weight: 400;
-  letter-spacing: 8px;
-  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-transform: none;
   color: var(--heading);
+  line-height: 1.1;
+}
+.page-hero-content h1::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin: 14px auto 0;
 }
 
 /* ================================================================
