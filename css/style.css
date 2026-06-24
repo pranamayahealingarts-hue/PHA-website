@@ -819,7 +819,7 @@ a { text-decoration: none; }
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: none;
-  color: var(--heading);
+  color: #1a1a1a;
   line-height: 1.1;
 }
 .page-hero-content h1::after {
