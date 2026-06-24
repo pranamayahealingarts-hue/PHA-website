@@ -50,28 +50,3 @@ document.querySelectorAll('.main-nav a').forEach(link => {
   if (linkPath === currentPath) link.classList.add('active');
 });
 
-/* ── Contact form → mailto ── */
-const form = document.querySelector('.contact-form');
-if (form) {
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const first   = form.querySelector('[name="first_name"]').value.trim();
-    const last    = form.querySelector('[name="last_name"]').value.trim();
-    const email   = form.querySelector('[name="email"]').value.trim();
-    const phone   = form.querySelector('[name="phone"]').value.trim();
-    const message = form.querySelector('[name="message"]').value.trim();
-
-    const body = [
-      `Name: ${first} ${last}`,
-      `Email: ${email}`,
-      phone ? `Phone: ${phone}` : '',
-      '',
-      message
-    ].filter(l => l !== null).join('\n');
-
-    window.location.href =
-      `mailto:pranamayahealingarts@gmail.com` +
-      `?subject=${encodeURIComponent(`Message from ${first} ${last}`)}` +
-      `&body=${encodeURIComponent(body)}`;
-  });
-}
