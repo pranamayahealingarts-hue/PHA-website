@@ -792,7 +792,8 @@ a { text-decoration: none; }
    ================================================================ */
 .page-hero {
   margin-top: 88px;
-  height: 280px;
+  min-height: 160px;
+  padding: 60px 20px;
   background: var(--sage);
   display: flex;
   align-items: center;
