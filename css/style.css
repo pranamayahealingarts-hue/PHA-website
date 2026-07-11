@@ -713,6 +713,23 @@ a { text-decoration: none; }
   .has-dropdown.open .dropdown { display: block; }
   .mobile-toggle { display: flex; }
 
+  .hero {
+    height: auto;
+    min-height: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 70px;
+  }
+  .hero-content { padding-bottom: 40px; }
+  .hero-stats {
+    position: static;
+    width: 100%;
+  }
+  .hero-stat {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
   .hero-content h1 { font-size: 2.8rem; }
   .services-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
   .two-col-section { grid-template-columns: 1fr; gap: 40px; }
