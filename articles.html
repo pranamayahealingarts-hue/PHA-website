@@ -3,11 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breathwork — Pranamaya Healing Arts</title>
+  <title>Articles — Pranamaya Healing Arts</title>
+  <meta name="description" content="Writing on the body, fascia, and the nervous system from Pranamaya Healing Arts.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .articles-section { padding: 90px 0 100px; background: var(--white); }
+    .articles-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+    .article-card {
+      display: block;
+      background: var(--sage-light);
+      padding: 40px 44px;
+      position: relative;
+      transition: opacity 0.2s;
+    }
+    .article-card:hover { opacity: 0.85; }
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 6px; height: 100%;
+      background: var(--gold);
+    }
+    .article-card .text-uppercase {
+      font-size: 0.66rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .article-card h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--heading);
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+    .article-card p {
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    .article-card .article-card-link {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    @media (max-width: 540px) {
+      .article-card { padding: 30px 26px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -21,7 +70,7 @@
         <img src="images/Logo.svg" class="logo-icon" alt="Pranamaya Healing Arts">
         <span class="logo-tagline">Where body meets mind</span>
       </a>
-            <nav class="main-nav" id="main-nav">
+      <nav class="main-nav" id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="visie.html">Vision</a></li>
@@ -42,37 +91,26 @@
   <section class="page-hero">
     <div class="page-hero-bg"></div>
     <div class="page-hero-content">
-      <h1>Breathwork</h1>
+      <h1>Articles</h1>
     </div>
   </section>
 
-  <section class="page-content">
+  <section class="articles-section">
     <div class="container">
-      <div class="two-col-section">
-        <div class="col-text">
-          <h2 class="section-heading">Breathwork</h2>
-          <p>Breathing is the one autonomic function we can consciously control — making it one of the most direct pathways into the nervous system. Structured breathwork can shift the body out of chronic stress activation, release held emotion and physical tension, and create states of profound clarity and restoration.</p>
-          <p>Sessions are tailored to your nervous system's current state. Whether the goal is to calm and regulate, or to use more activating breath patterns to access deeper layers, the work is always done safely, with full presence and body-led guidance throughout.</p>
-          <a href="contact.html" class="btn btn-border" style="margin-top:12px">Book a Session</a>
-        </div>
-        <div class="col-image">
-          <div class="image-wrap image-wrap--right-accent">
-            <div class="img-placeholder"></div>
-          </div>
-        </div>
+      <div class="articles-list">
+
+        <a href="article-traffic-jam.html" class="article-card">
+          <div class="text-uppercase">Thai Massage &middot; Fascia</div>
+          <h2>Where Is the Traffic Jam?</h2>
+          <p>Why fascia — not just muscle — may be the most overlooked factor in how the whole body functions, and what that has to do with Thai massage.</p>
+          <span class="article-card-link">Read the Article &rarr;</span>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <section class="review-section">
-    <div class="review-inner">
-      <p class="review-quote">Review coming soon.</p>
-      <div class="review-author">Client</div>
-      <div class="review-context">Review</div>
-    </div>
-  </section>
-
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-links">
         Copyright 2024 Pranamaya Healing Arts
