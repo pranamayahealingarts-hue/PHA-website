@@ -3,18 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Alexandra | Pranamaya Healing Arts</title>
-  <meta name="description" content="Ready to work with your body, not just your mind? Reach Alexandra in Pemberton BC, Playa Maderas Nicaragua, or online anywhere in the world.">
+  <title>Articles | Pranamaya</title>
+  <meta name="description" content="Writing on the body, fascia, and the nervous system from Pranamaya Healing Arts.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Pranamaya Healing Arts">
-  <meta property="og:title" content="Contact">
-  <meta property="og:description" content="Ready to work with your body, not just your mind? Reach Alexandra in Pemberton BC, Playa Maderas Nicaragua, or online anywhere in the world.">
-  <meta property="og:url" content="https://pranamayahealingarts.com/contact.html">
+  <meta property="og:title" content="Articles">
+  <meta property="og:description" content="Writing on the body, fascia, and the nervous system from Pranamaya Healing Arts.">
+  <meta property="og:url" content="https://pranamayahealingarts.com/articles.html">
   <link rel="icon" href="images/Logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .articles-section { padding: 90px 0 100px; background: var(--white); }
+    .articles-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+    .article-card {
+      display: block;
+      background: var(--sage-light);
+      padding: 40px 44px;
+      position: relative;
+      transition: opacity 0.2s;
+    }
+    .article-card:hover { opacity: 0.85; }
+    .article-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 6px; height: 100%;
+      background: var(--gold);
+    }
+    .article-card .text-uppercase {
+      font-size: 0.66rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .article-card h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--heading);
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+    .article-card p {
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 18px;
+    }
+    .article-card .article-card-link {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    @media (max-width: 540px) {
+      .article-card { padding: 30px 26px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -28,12 +76,11 @@
         <img src="images/Logo.svg" class="logo-icon" alt="Pranamaya Healing Arts">
         <span class="logo-tagline">Where body meets mind</span>
       </a>
-            <nav class="main-nav" id="main-nav">
+      <nav class="main-nav" id="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="vision.html">Vision</a></li>
           <li><a href="body-based-therapies.html">Offerings</a></li>
-          
           <li><a href="under-my-hands.html">Under My Hands</a></li>
           <li><a href="practical-info.html">Practical Info</a></li>
           <li><a href="articles.html">Articles</a></li>
@@ -47,44 +94,29 @@
     </div>
   </header>
 
-  <!-- Full contact section (same as homepage) -->
-  <section class="contact-section" style="padding-top:178px;padding-bottom:90px;min-height:calc(100vh - 88px);">
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <h1>Articles</h1>
+    </div>
+  </section>
+
+  <section class="articles-section">
     <div class="container">
-      <div class="contact-inner">
+      <div class="articles-list">
 
-        <div class="contact-info">
-          <div class="contact-info-logo">
-            <img src="images/Logo.svg" class="logo-icon" alt="Pranamaya Healing Arts" style="height:70px;width:auto">
-            <div class="logo-text">
-              <span class="sense" style="font-size:1.55rem">pranamaya</span>
-              <span class="insight" style="font-size:1.4rem">healing arts</span>
-            </div>
-          </div>
-          <p>Ready to find out what your body has been holding on to? Fill out this form and I'll be in touch shortly.</p>
-          <div class="contact-signature">Alexandra</div>
-        </div>
-
-        <div class="contact-form-wrap">
-          <h3 class="contact-heading">Get in Touch</h3>
-          <form class="contact-form" action="https://formspree.io/f/xbdvgpak" method="POST">
-            <div class="form-row">
-              <input type="text"  class="form-input" name="first_name"  placeholder="First Name"  required>
-              <input type="text"  class="form-input" name="last_name"   placeholder="Last Name"   required>
-            </div>
-            <div class="form-row">
-              <input type="email" class="form-input" name="email"       placeholder="Email"       required>
-              <input type="tel"   class="form-input" name="phone"       placeholder="Phone">
-            </div>
-            <textarea class="form-textarea" name="message" placeholder="Your message"></textarea>
-            <button type="submit" class="btn btn-submit">Send</button>
-          </form>
-        </div>
+        <a href="article-traffic-jam.html" class="article-card">
+          <div class="text-uppercase">Thai Massage &middot; Fascia</div>
+          <h2>Where Is the Traffic Jam?</h2>
+          <p>Why fascia — not just muscle — may be the most overlooked factor in how the whole body functions, and what that has to do with Thai massage.</p>
+          <span class="article-card-link">Read the Article &rarr;</span>
+        </a>
 
       </div>
     </div>
   </section>
 
-  <footer class="site-footer">
+    <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-links">
         Copyright 2025 <span class="footer-pranamaya">PRANAMAYA</span> <span class="footer-healing">HEALING ARTS</span>
