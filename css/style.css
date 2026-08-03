@@ -171,9 +171,6 @@ a { text-decoration: none; }
 .hero {
   margin-top: 88px;
   position: relative;
-}
-.hero-media {
-  position: relative;
   height: calc(100vh - 88px);
   min-height: 560px;
   overflow: hidden;
@@ -192,7 +189,7 @@ a { text-decoration: none; }
   object-fit: cover;
   object-position: center 20%;
 }
-.hero-media::after {
+.hero::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -880,16 +877,7 @@ a { text-decoration: none; }
   .mobile-toggle { display: flex; }
 
   .hero-content h1 { font-size: 2.8rem; }
-  .hero-stats {
-    position: static;
-    width: 100%;
-    flex-direction: column;
-  }
-  .hero-stat {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
+  .hero-stats { display: none; }
   .services-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
   .two-col-section { grid-template-columns: 1fr; gap: 40px; }
   .two-col-section .col-image { order: -1; }
