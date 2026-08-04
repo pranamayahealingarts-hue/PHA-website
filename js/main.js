@@ -9,16 +9,6 @@ if (toggle && nav) {
   });
 }
 
-/* ── Mobile dropdown toggles ── */
-document.querySelectorAll('.has-dropdown > a').forEach(link => {
-  link.addEventListener('click', e => {
-    if (window.innerWidth <= 860) {
-      e.preventDefault();
-      link.parentElement.classList.toggle('open');
-    }
-  });
-});
-
 /* ── Close nav on outside click ── */
 document.addEventListener('click', e => {
   if (nav && !nav.contains(e.target) && !toggle.contains(e.target)) {

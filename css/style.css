@@ -138,8 +138,7 @@ a { text-decoration: none; }
   padding: 8px 0;
   border-top: 2px solid var(--sage);
 }
-.has-dropdown:hover .dropdown,
-.has-dropdown.open .dropdown { display: block; }
+.has-dropdown:hover .dropdown { display: block; }
 .dropdown li a {
   display: block;
   padding: 10px 22px;
@@ -871,9 +870,6 @@ a { text-decoration: none; }
   }
   .main-nav.open ul { flex-direction: column; gap: 8px; align-items: flex-start; }
   .main-nav.open a { font-size: 0.85rem; padding: 8px 0; }
-  .has-dropdown .dropdown { position: static; box-shadow: none; border: none; padding-left: 16px; }
-  .has-dropdown:hover .dropdown { display: none; }
-  .has-dropdown.open .dropdown { display: block; }
   .mobile-toggle { display: flex; }
 
   .hero-content h1 { font-size: 2.8rem; }
