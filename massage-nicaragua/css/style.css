@@ -237,6 +237,41 @@ a { text-decoration: none; }
 .room-text .section-title { text-align: left; }
 .room-text p { color: var(--ink-soft); }
 
+/* TESTIMONIALS */
+.testimonials {
+  padding: 4.5rem 1.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.testimonial footer {
+  color: var(--ocean-dark);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
 /* BOOKING */
 .booking {
   text-align: center;
